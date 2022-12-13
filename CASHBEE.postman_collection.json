@@ -1,0 +1,715 @@
+{
+	"info": {
+		"_postman_id": "dfcf581f-c718-4551-ba35-8ba8b2ba68ae",
+		"name": "CASHBEE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20199304"
+	},
+	"item": [
+		{
+			"name": "COMPANY",
+			"item": [
+				{
+					"name": "STORE COMPANY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_code",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "company_name",
+									"value": "abc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/companies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET COMPANIES",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/companies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET COMPANY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/companies/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE COMPANY",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "company_code",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "company_name",
+									"value": "abcde",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/companies/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE COMPANY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/companies/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DEPARTMENT",
+			"item": [
+				{
+					"name": "STORE DEPARTMENT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "department_code",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "department_name",
+									"value": "department A",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/departments",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DEPARTMENTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/departments",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DEPARTMENT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/departments/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"departments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DEPARTMENT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "department_code",
+									"value": "aaa",
+									"type": "text"
+								},
+								{
+									"key": "department_name",
+									"value": "bbb",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/departments/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"departments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DEPARTMENT",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/companies/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMPLOYEE",
+			"item": [
+				{
+					"name": "STORE EMPLOYEE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "department_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Mark",
+									"type": "text"
+								},
+								{
+									"key": "middle_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "09854657854",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET EMPLOYEES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET EMPLOYEE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employees/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EMPLOYEE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "department_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "middle_name",
+									"value": "new",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "09854657854",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employees/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE EMPLOYEE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employees/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEND SMS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "department_id",
+									"value": "1",
+									"description": "if department_id is present, employee list is ignored",
+									"type": "text"
+								},
+								{
+									"key": "employee_list[]",
+									"value": "1",
+									"description": "if employee_list is present, department_id is ignored",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "employee_list[]",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "message",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/send-sms",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"send-sms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "REGISTER USER",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "first-user",
+						"value": "true",
+						"description": "require if first user only",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "company_id",
+							"value": "1",
+							"description": "excluded if first user only",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "admin1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "company_code",
+							"value": "abc123",
+							"description": "require if first user only",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "company_name",
+							"value": "company A",
+							"description": "require if first user only",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN USER",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{ACCESS_TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "ACCESS_TOKEN",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmIzZjRjNzI5MjgzMDQwZmNiY2JkZDY1ZTRjODdlMzU2MTU2NTc1MzdkMWVkNzRhMmFkMTg1NTcxNTY4ZmViZjYxMWY5ZGJiMGEyNjExZDMiLCJpYXQiOjE2NzA5MDU4NjMuOTE1ODE1LCJuYmYiOjE2NzA5MDU4NjMuOTE1ODIsImV4cCI6MTY3MTc2OTg2My43Nzc0MzgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.jWXj0TjZGUF60SgvMLowvZHFz5azXxKxDYIiJRWzmqzvuNru1qPmK0TiKH9TxLIKswFyEa_08vZk2pQMA6Jys1bsvQap-gU8cHsZd7mjk2BCEQFzAhlia0muQXDQGlqdoOE21G8D4b8JvOzhO_f0EQVb_dVyqFzb3lZ59_Hgub7oWr6rQVEDZ5RoK1DlqkIbPRPkpQPlgrd3HA2IhtXXZicIW7r6Ew-2MmKXr0LwRq05RF_bRF1sagTQdPjBVjBHs-j15t7gXuDsrDeUWrr_h5x3c_bLJ-jNZssuNHN-PW-ihnTfVnzaF6jNK5QgUduLiyabAPIWELrtkSb44nltnMRfuO3Qzc_oi8xd5PLcfWds-j5Gw27BswflgpSoLrCmrI9fizGUJXbbdq9wh9q_Tr1V0C3YW_nldFjI0dZAAzVzKFvom9_9TDHuL92wuujpgw8OGa9WNrMUha82mISsUdK-14tH-cWYwhQmktTXYREcRFPesHa1VW8TLLh1zJN31jTr4a63QSzb_7UdJEf9IvM36ttyHyww2Q562sRFIiyOnm9j1bDvebkYHYzEfyDNnWE58RWwHFxXwc9sODMeCloGx-bMxnUnJTMvNi0HEhh3ZlpuNFvSPBh-Xb8jD8hxBUR7EZDSESVuGj7bpHiUV8oKHMtrUo_sSuDS9jE2Awo",
+			"type": "string"
+		}
+	]
+}
